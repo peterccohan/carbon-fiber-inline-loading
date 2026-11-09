@@ -1,4 +1,5 @@
-[README.md](https://github.com/user-attachments/files/34601495/README.md)
+[README (1).md](https://github.com/user-attachments/files/34602258/README.1.md)
+
 # In-Line Carbon Fiber Loading of PLA-CF on a Desktop FDM Printer: A Failure Analysis
 
 **Peter Cohan** · Home lab experiment · Write-up reconstructed afterward (see [Documentation note](#documentation-note))
@@ -6,7 +7,14 @@
 
 ## Abstract
 
-Commercial carbon-fiber supplemented PLA (PLA-CF), such as the formula used in this experiment, carries a fixed percent mass of carbon fiber (within a certain margin). I attempted to raise this percentage (% & weight based) of carbon fiber without technically making custom filament. I fed stock carbon fiber chips, blended into a fine, near-powder, into a modified PTFE feed tube on a Bambu Lab P1S FDM printer, where it was then drawn into the hotend by the PLA-CF filament to be melted and incorporated. Carbon fiber was initially deposited into the print at a very high concentration, which showed that in-line loading is theoretically and physically possible for FDM printing. However, the hotend quickly clogged, agglomerated, and jammed at the nozzle while also raising melt viscosity past what even reinforced extruder gears could push. A follow up measurement of the re-blended fiber found that 92% of pieces were longer than the nozzle's 0.4 mm bore, and that even when blend time was doubled from 30 s to 60 s, no detectable reduction in the flakes' dimensions were found. The failure displayed that fiber has to be dispersed in the polymer *before* reaching the hotend. This conclusion led directly to my next project: a homemade (fully designed by me) filament extruder so I can create controlled, measured fiber concentrations. 
+Commercial carbon-fiber supplemented PLA (PLA-CF), such as the formula used in this experiment, carries a fixed percent mass of carbon fiber (within a certain margin). I attempted to raise this percentage (% & weight based) of carbon fiber without technically making custom filament. I fed stock carbon fiber chips, blended into a fine, near-powder, into a m# In-Line Carbon Fiber Loading of PLA-CF on a Desktop FDM Printer: A Failure Analysis
+
+**Peter Cohan** · Home lab experiment · Write-up reconstructed afterward (see [Documentation note](#documentation-note))
+
+## Abstract
+
+Commercial carbon-fiber supplemented PLA (PLA-CF), such as the formula used in this experiment, carries a fixed percent mass of carbon fiber (within a certain margin). I attempted to raise this percentage (by weight) of carbon fiber without technically making custom filament. I fed chopped carbon fiber, blended into a fine, near-powder, into a modified PTFE feed tube on a Bambu Lab P1S FDM printer, where it was then drawn into the hotend by the PLA-CF filament to be melted and incorporated. Additional carbon fiber was deposited into the print, which showed that in-line loading is physically possible for FDM printing. However, the fiber agglomerated and jammed at the nozzle, likely also raising melt viscosity past what even reinforced extruder gears could push, and the hotend quickly clogged. A follow-up measurement of the re-blended fiber found that 92% of pieces were longer than the nozzle's 0.4 mm bore, and that even when blend time was doubled from 30 s to 60 s, no detectable reduction in the flakes' dimensions was found. The failure displayed that fiber has to be dispersed in the polymer *before* reaching the hotend. This conclusion led directly to my next project: a homemade filament extruder (built on the Lyman V6 core, with my own drive system and electronics) so I can create controlled, measured fiber concentrations.
+
 ## Motivation and Hypothesis
 
 Short carbon fibers stiffen a polymer by carrying load across the matrix. More fiber should give a stiffer part, up to a point. Commercial PLA-CF fixes that loading, and making custom filament takes equipment I didn't have at the time.
@@ -94,7 +102,69 @@ The core problem is that the fiber met the polymer for the first time inside the
 
 ## Documentation Note
 
-I didn't document this experiment while I ran it. This write-up was reconstructed afterward from memory. Details I don't remember precisely, such as fiber quantity, print settings, and time to failure, are left out rather than estimated. Not recording data in real time is one of the lessons of this experiment, and I now keep a lab log for every project.
+I didn't document this experiment while I ran it. This write-up was reconstructed afterward from memory. Details I don't remember precisely, such as fiber quantity, print settings, and time to failure, are left out rather than estimated. Not recording data in real time is one of the lessons of this experiment.
 
+[flake_measurements (2).csv](https://github.com/user-attachments/files/34602279/flake_measurements.2.csv)
 
-<img width="1800" height="840" alt="length-distribution" src="https://github.com/user-attachments/assets/df12fd41-6028-4e2d-a2c8-5f8b55e5a1cb" />
+batch,blend_time_s,width_um,length_um
+1,30,303,418
+1,30,247,565
+1,30,98,1160
+1,30,291,1137
+1,30,287,404
+1,30,253,849
+1,30,194,746
+1,30,224,440
+1,30,164,756
+1,30,222,914
+1,30,267,431
+1,30,510,661
+1,30,321,812
+1,30,190,803
+1,30,202,916
+1,30,132,786
+1,30,148,1305
+1,30,165,1529
+1,30,147,2355
+1,30,284,529
+1,30,139,361
+1,30,346,1306
+1,30,326,1353
+1,30,214,398
+1,30,308,777
+1,30,117,463
+1,30,253,818
+1,30,260,1451
+1,30,273,551
+1,30,215,600
+2,60,386,714
+2,60,395,403
+2,60,283,298
+2,60,184,499
+2,60,422,504
+2,60,200,1029
+2,60,120,1098
+2,60,158,509
+2,60,118,702
+2,60,350,635
+2,60,168,590
+2,60,194,771
+2,60,158,323
+2,60,253,3315
+2,60,167,421
+2,60,236,417
+2,60,130,507
+2,60,245,786
+2,60,222,854
+2,60,283,2078
+2,60,238,1478
+2,60,309,672
+2,60,486,1367
+2,60,116,924
+2,60,128,1398
+2,60,248,316
+2,60,323,1059
+2,60,224,911
+2,60,311,880
+2,60,277,485
+

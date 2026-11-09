@@ -4,11 +4,9 @@
 **Peter Cohan** · Home lab experiment · Write-up reconstructed afterward (see [Documentation note](#documentation-note))
 [flake_measurements.csv](https://github.com/user-attachments/files/34601497/flake_measurements.csv)
 
-## Abstract[flake_measurements.csv](https://github.com/user-attachments/files/34601503/flake_measurements.csv)
+## Abstract
 
-
-Commercial carbon-fiber-filled PLA (PLA-CF) carries a fixed fiber loading set by the manufacturer. I tried to raise the effective fiber content of printed parts without making custom filament. I fed chopped carbon fiber, blended to a near-powder, into a modified PTFE feed tube on a Bambu Lab P1S, where it was drawn into the hotend with the PLA-CF filament. Some additional carbon was deposited into the print, which showed that in-line loading is physically possible. The hotend then clogged, and the clog destroyed the print head. My leading explanation is that dry, unwetted, unmetered fiber entered the melt zone, agglomerated, and jammed at the nozzle constriction while also raising melt viscosity past what the extruder could push. A follow-up measurement of re-blended fiber (n = 60) found that about 92% of pieces were longer than the 0.4 mm nozzle bore, and that doubling blend time from 30 s to 60 s produced no detectable reduction in length. The failure showed that fiber has to be dispersed in the polymer *before* it reaches the hotend. That conclusion led directly to my next project: a desktop filament extruder for compounding composite filament at controlled, measured fiber loadings.
-
+Commercial carbon-fiber supplemented PLA (PLA-CF), such as the formula used in this experiment, carries a fixed percent mass of carbon fiber (within a certain margin). I attempted to raise this percentage (% & weight based) of carbon fiber without technically making custom filament. I fed stock carbon fiber chips, blended into a fine, near-powder, into a modified PTFE feed tube on a Bambu Lab P1S FDM printer, where it was then drawn into the hotend by the PLA-CF filament to be melted and incorporated. Carbon fiber was initially deposited into the print at a very high concentration, which showed that in-line loading is theoretically and physically possible for FDM printing. However, the hotend quickly clogged, agglomerated, and jammed at the nozzle while also raising melt viscosity past what even reinforced extruder gears could push. A follow up measurement of the re-blended fiber found that 92% of pieces were longer than the nozzle's 0.4 mm bore, and that even when blend time was doubled from 30 s to 60 s, no detectable reduction in the flakes' dimensions were found. The failure displayed that fiber has to be dispersed in the polymer *before* reaching the hotend. This conclusion led directly to my next project: a homemade (fully designed by me) filament extruder so I can create controlled, measured fiber concentrations. 
 ## Motivation and Hypothesis
 
 Short carbon fibers stiffen a polymer by carrying load across the matrix. More fiber should give a stiffer part, up to a point. Commercial PLA-CF fixes that loading, and making custom filament takes equipment I didn't have at the time.
@@ -47,7 +45,7 @@ In commercial PLA-CF, every fiber is already surrounded by polymer, so the melt 
 
 **3. Agglomeration at the nozzle constriction.**
 Blending makes fibers shorter but does not separate them, so clumps can easily be larger than the nozzle bore. Particle-laden flows tend to jam at a constriction once particles or clumps approach a meaningful fraction of the orifice diameter, especially at high solids content.
-*Test:* Measure the fiber length distribution of the blended fiber and compare it to the nozzle diameter. **Done: see [Follow-up Measurement](#follow-up-measurement-blended-piece-size). Result supports this hypothesis.**
+*Test:* Measure the fiber length distribution of the blended fiber and compare it to the nozzle diameter. **Done: see [Follow-up Measurement](#follow-up-measurement-blended-piece-size). Results most directly support this hypothesis.**
 
 **4. Melt viscosity exceeded what the extruder could push.**
 Short fiber raises a polymer melt's viscosity, and PLA-CF already contains fiber. Adding more raises back-pressure until the extruder gears can no longer drive the filament.
@@ -98,66 +96,5 @@ The core problem is that the fiber met the polymer for the first time inside the
 
 I didn't document this experiment while I ran it. This write-up was reconstructed afterward from memory. Details I don't remember precisely, such as fiber quantity, print settings, and time to failure, are left out rather than estimated. Not recording data in real time is one of the lessons of this experiment, and I now keep a lab log for every project.
 
-batch,blend_time_s,width_um,length_um
-1,30,303,418
-1,30,247,565
-1,30,98,1160
-1,30,291,1137
-1,30,287,404
-1,30,253,849
-1,30,194,746
-1,30,224,440
-1,30,164,756
-1,30,222,914
-1,30,267,431
-1,30,510,661
-1,30,321,812
-1,30,190,803
-1,30,202,916
-1,30,132,786
-1,30,148,1305
-1,30,165,1529
-1,30,147,2355
-1,30,284,529
-1,30,139,361
-1,30,346,1306
-1,30,326,1353
-1,30,214,398
-1,30,308,777
-1,30,117,463
-1,30,253,818
-1,30,260,1451
-1,30,273,551
-1,30,215,600
-2,60,386,714
-2,60,395,403
-2,60,283,298
-2,60,184,499
-2,60,422,504
-2,60,200,1029
-2,60,120,1098
-2,60,158,509
-2,60,118,702
-2,60,350,635
-2,60,168,590
-2,60,194,771
-2,60,158,323
-2,60,253,3315
-2,60,167,421
-2,60,236,417
-2,60,130,507
-2,60,245,786
-2,60,222,854
-2,60,283,2078
-2,60,238,1478
-2,60,309,672
-2,60,486,1367
-2,60,116,924
-2,60,128,1398
-2,60,248,316
-2,60,323,1059
-2,60,224,911
-2,60,311,880
-2,60,277,485
 
 <img width="1800" height="840" alt="length-distribution" src="https://github.com/user-attachments/assets/df12fd41-6028-4e2d-a2c8-5f8b55e5a1cb" />

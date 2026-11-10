@@ -97,4 +97,4 @@ I didn't document this experiment while I ran it. This write-up was reconstructe
 
 ---
 
-*Experiment, measurements, and data by Peter Cohan. Write-up drafted with help from Claude (Anthropic) and edited by me.*
+*Experiment, measurements, and data by Peter Cohan. Write-up formatted with help from Claude (Anthropic) and edited by me.*

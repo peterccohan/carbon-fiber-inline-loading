@@ -1,13 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/34602258/README.1.md)
-
 # In-Line Carbon Fiber Loading of PLA-CF on a Desktop FDM Printer: A Failure Analysis
-
-**Peter Cohan** · Home lab experiment · Write-up reconstructed afterward (see [Documentation note](#documentation-note))
-[flake_measurements.csv](https://github.com/user-attachments/files/34601497/flake_measurements.csv)
-
-## Abstract
-
-Commercial carbon-fiber supplemented PLA (PLA-CF), such as the formula used in this experiment, carries a fixed percent mass of carbon fiber (within a certain margin). I attempted to raise this percentage (% & weight based) of carbon fiber without technically making custom filament. I fed stock carbon fiber chips, blended into a fine, near-powder, into a m# In-Line Carbon Fiber Loading of PLA-CF on a Desktop FDM Printer: A Failure Analysis
 
 **Peter Cohan** · Home lab experiment · Write-up reconstructed afterward (see [Documentation note](#documentation-note))
 
@@ -104,3 +95,6 @@ The core problem is that the fiber met the polymer for the first time inside the
 
 I didn't document this experiment while I ran it. This write-up was reconstructed afterward from memory. Details I don't remember precisely, such as fiber quantity, print settings, and time to failure, are left out rather than estimated. Not recording data in real time is one of the lessons of this experiment.
 
+---
+
+*Experiment, measurements, and data by Peter Cohan. Write-up drafted with help from Claude (Anthropic) and edited by me.*
